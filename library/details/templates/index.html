@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>E-Library</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+    <!--wrapper start-->
+    <div class="wrapper">
+        <!--header menu start-->
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">Student <span>Dashboard</span></div>
+                <div class="sidebar-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!-- <ul>
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                        <li><a href="#"><i class="fas fa-power-off"></i></a></li>
+                    </ul> -->
+            </div>
+        </div>
+        <!--header menu end-->
+        <!--sidebar start-->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <center class="profile">
+                    <img src="logo.png" alt="">
+                    <p>Surya Pratap</p>
+                </center>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-desktop"></i><span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="item" id="profile">
+                    <a href="#profile" class="menu-btn">
+                        <i class="fas fa-user-circle"></i><span>Profile </span>
+                    </a>
+                </li>
+                <li class="item" id="messages">
+                    <a href="#messages" class="menu-btn">
+                        <i class="fas fa-envelope"></i><span>Books</span>
+                    </a>
+                </li>
+                <li class="item" id="settings">
+                    <a href="#settings" class="menu-btn">
+                        <i class="fas fa-cog"></i><span>Issued Books</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-info-circle"></i><span>Syllabus</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <!--sidebar end-->
+        <!--main container start-->
+        <div class="main-container">
+            <div class="container">
+                <div class="padd-15">
+                    <div class="block">
+                        <div class="icon"><i class="fas fa-user-circle"></i></div>
+                        <h4>Total Student</h4>
+                        <h3>150</h4>
+                    </div>
+                </div>
+                <div class="padd-15">
+                    <div class="block">
+                        <div class="icon"><i class="fas fa-user-circle"></i></div>
+                        <h4>Books</h4>
+                        <h3>150</h4>
+                    </div>
+                </div>
+                <div class="padd-15">
+                    <div class="block">
+                        <div class="icon"><i class="fas fa-user-circle"></i></div>
+                        <h4>Available Books</h4>
+                        <h3>150</h4>
+                    </div>
+                </div>
+                <div class="padd-15">
+                    <div class="block">
+                        <div class="icon"><i class="fas fa-user-circle"></i></div>
+                        <h4>Teachers</h4>
+                        <h3>150</h4>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="padd-15">
+                        <div class="det">
+                            <span>
+                                <h3><strong>Name:</strong> Surya Pratap singh</h3>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="padd-15">
+                        <div class="det">
+                            <span>
+                                <h3><strong>Roll No.:</strong> 2001330100256</h3>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="padd-15">
+
+                        <div class=" det">
+                            <span>
+                                <h3><strong>Semester:</strong>VI</h3>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="padd-15">
+                        <div class=" det">
+                            <span>
+                                <h3><strong>Year:</strong>3rd</h3>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="padd-15">
+
+                        <div class="det">
+                            <span>
+                                <h3><strong>Branch:</strong>CSE</h3>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="padd-15">
+                        <div class="det">
+                            <span>
+                                <h3><strong>Course:</strong>B.tech</h3>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="padd-15">
+                        <div class="det">
+                            <span>
+                                <h3><strong>Gmail:</strong>Suryapratap2542@gmail.com</h3>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="padd-15">
+                        <div class="det">
+                            <span>
+                                <h3><strong>Mobile No.:</strong>7887070588</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularbook">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item ">
+                            <img src="books/sub1.jpg" >
+                          </div>
+                          <div class="carousel-item ">
+                            <img src="books/sub2.jpg" >
+                          </div>
+                          <div class="carousel-item ">
+                            <img src="books/sub3.jpg" >
+                          </div>
+                          <div class="carousel-item ">
+                            <img src="books/sub4.jpg" >
+                          </div>
+                          <div class="carousel-item ">
+                            <img src="books/sub5.jpg">
+                          </div>
+                          <div class="carousel-item ">
+                            <img src="books/sub6.jpg" >
+                          </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </a>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+        <!--main container end-->
+    </div>
+    <!--wrapper end-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".sidebar-btn").click(function () {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+    </script>
+      <!-- <script src="owl.carousel.min.js"></script> -->
+      <script src="script.js"></script>
+
+
+</body>
+
+</html>
